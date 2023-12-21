@@ -1,42 +1,51 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+.container {
+  background-color: hsl(0, 70%, 75%);
   padding: 2rem;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(255, 106, 106, 0.1);
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.card {
-  padding: 2em;
+li {
+  margin-bottom: 8px;
+  color: black;
 }
 
-.read-the-docs {
-  color: #888;
+/* Pretty colors for the names */
+li:nth-child(1) {
+  color: rgb(239, 12, 182); /* Tomato */
+}
+
+li:nth-child(2) {
+  color: #0f46eb; /* Royal Blue */
+}
+
+li:nth-child(3) {
+  color: #0d710d; /* Lime Green */
+}
+
+li:nth-child(4) {
+  color: black; /* Medium Purple */
 }
